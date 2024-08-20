@@ -3,8 +3,10 @@ kind: Namespace
 metadata:
   labels:
     control-plane: goweb-operator
-  name: system
+  name: goweb-system
+
 ---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -32,8 +34,6 @@ spec:
           env:
             - name: ANSIBLE_GATHERING
               value: explicit
-            - name: OPERATOR_NAME
-              value: "goweb-operator"
             - name: RELATED_IMAGE_FRONTEND
               value: docker.io/ishasangrolkar/demo-app:latest
       terminationGracePeriodSeconds: 10

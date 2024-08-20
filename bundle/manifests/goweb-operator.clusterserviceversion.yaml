@@ -244,8 +244,6 @@ spec:
                       fieldPath: metadata.name
                 - name: ANSIBLE_GATHERING
                   value: explicit
-                - name: OPERATOR_NAME
-                  value: goweb-operator
                 - name: RELATED_IMAGE_FRONTEND
                   value: docker.io/ishasangrolkar/demo-app:latest
                 image: quay.io/isha98/goweb-operator1

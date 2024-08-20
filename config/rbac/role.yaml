@@ -15,6 +15,7 @@ rules:
   - pods/exec
   - pods/log
   - namespaces
+  - configmaps
   verbs:
   - create
   - delete

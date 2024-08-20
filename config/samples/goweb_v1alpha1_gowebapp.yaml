@@ -1,10 +1,11 @@
 apiVersion: goweb.com/v1alpha1
 kind: GoWebApp
 metadata:
-  name: gowebapp-sample
+  name: "gowebapp-sample"
+  namespace: "goweb-system"
 spec:
   frontend:
-    image: docker.io/ishasangrolkar/demo-app:latest
+    image: "docker.io/ishasangrolkar/demo-app:latest"
     imagePullSecrets: []
     replicaCount: 1
     service:
